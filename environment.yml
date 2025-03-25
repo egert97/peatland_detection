@@ -1,0 +1,56 @@
+name: peatland_detection
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python version
+  - python=3.9
+
+  # Geospatial Libraries
+  - gdal
+  - rasterio
+  - geopandas
+  - shapely
+  - fiona
+  - pyproj
+  - folium  # For interactive mapping
+
+  # Remote Sensing & Image Processing
+  - scikit-image
+  - opencv
+  - earthpy  # For working with satellite images
+  - sentinelsat  # For downloading Sentinel satellite images
+
+  # Deep Learning & Machine Learning
+  - tensorflow
+  - keras
+  - pytorch
+  - torchvision
+  - ultralytics  # For YOLOv5
+  - segmentation-models-pytorch  # For U-Net & DeepLabV3
+  - scikit-learn
+  - xgboost  # Optional for meta-classifiers
+
+  # Optimization & Hyperparameter Tuning
+  - keras-tuner
+  - optuna
+
+  # Data Science & Visualization
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+
+  # Jupyter Notebook Support
+  - jupyter
+  - notebook
+
+  # Other Utilities
+  - tqdm  # For progress bars
+  - h5py  # For saving deep learning models
+  - pip
+  - pip:
+      - laspy  # For handling LiDAR .las files
+      - rasterstats  # For raster statistics in GIS
+      - albumentations  # For data augmentation
